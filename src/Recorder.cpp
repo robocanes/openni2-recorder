@@ -42,8 +42,8 @@ int main(int argc, char *argv[])
     video_depth_dir = directory + config["video_depth_name"];
 	
 	
-	video_color_writer = new cv::VideoWriter(video_color_dir, CV_FOURCC('j','p','e','g'), 30, size, true);
-	video_depth_writer = new cv::VideoWriter(video_depth_dir, CV_FOURCC('j','p','e','g'), 30, size, false);
+	video_color_writer = new cv::VideoWriter(video_color_dir, CV_FOURCC('F','M','P','4'), 30, size, true);
+	video_depth_writer = new cv::VideoWriter(video_depth_dir, CV_FOURCC('F','M','P','4'), 30, size, false);
 	
     
     
